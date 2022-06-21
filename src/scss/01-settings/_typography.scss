@@ -1,0 +1,41 @@
+
+// Font Family
+$font-sans: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-serif: Georgia, "Times New Roman", Times, serif !default;
+$font-monospace: Monaco, Menlo, Consolas, "Courier New", monospace !default;
+$font-base: $font-sans !default;
+
+// Font size
+$font-size-base: 1rem !default; //16px
+
+
+// Font line-height
+$font-line-height-base: 1.5 !default; //24px
+
+// Font weight
+$font-weight-hairline: 100 !default;
+$font-weight-thin: 200 !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-semibold: 600 !default;
+$font-weight-bold: 700 !default;
+$font-weight-extrabold: 800 !default;
+$font-weight-black: 900 !default;
+
+$font-weight-base: $font-weight-normal !default;
+
+
+// Paragraph margin
+$paragraph-margin-base: 1.25rem !default; //24px
+
+
+// Headings
+$headings-color: inherit !default;
+
+$headings-font-family: $font-base !default;
+$headings-font-weight: $font-weight-medium !default;
+
+$headings-line-height: 1.2 !default;
+$headings-margin-bottom: 1rem !default;
+$headings-text-transform: inherit !default;
