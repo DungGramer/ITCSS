@@ -12,13 +12,13 @@ $breakpoint-retina: 160em;          // 2560px
 $breakpoint-4k: 240em;              // 3840px
 
 $breakpoints: (
-  mobile: $breakpoint-mobile,
-  phablet: $breakpoint-phablet,
-  tablet: $breakpoint-tablet-portrait,
+  mobile:           $breakpoint-mobile,
+  phablet:          $breakpoint-phablet,
+  tablet:           $breakpoint-tablet-portrait,
   tablet-landscape: $breakpoint-tablet-landscape,
-  laptop: $breakpoint-laptop,
-  desktop: $breakpoint-desktop,
-  hd: $breakpoint-hd,
-  retina: $breakpoint-retina,
-  4k: $breakpoint-4k
+  laptop:           $breakpoint-laptop,
+  desktop:          $breakpoint-desktop,
+  hd:               $breakpoint-hd,
+  retina:           $breakpoint-retina,
+  4k:               $breakpoint-4k
 );

@@ -26,7 +26,7 @@ $font-weight-black: 900 !default;
 $font-weight-base: $font-weight-normal !default;
 
 // Paragraph margin
-$paragraph-margin-base: 1.25rem !default; //24px
+$paragraph-margin-base: $global-spacing !default; //24px
 
 // Headings
 $headings-color: inherit !default;
