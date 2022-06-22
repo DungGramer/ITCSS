@@ -10,10 +10,9 @@
 */
 
 @mixin add-css-variables($module) {
-    :root {
-     @each $name, $value in $module {
-       --#{$name}: #{$value};
-     }
+  :root {
+    @each $name, $value in $module {
+      --#{$name}: #{$value};
     }
- }
- 
+  }
+}
