@@ -7,4 +7,6 @@ $grid-columns: 12 !default;
 $grid-gutter-width: 1.5rem !default; //24px
 
 /* Container */
-$container-tablet: (($breakpoints.tablet - ($grid-gutter-width * 2)) + $grid-gutter-width) !default;
+$container-tablet: (
+  ($breakpoints.tablet - ($grid-gutter-width * 2)) + $grid-gutter-width
+) !default;
