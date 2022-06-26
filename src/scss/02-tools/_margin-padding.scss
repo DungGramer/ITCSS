@@ -1,7 +1,9 @@
 @mixin padding-vertical($top, $bottom: false) {
   @if $bottom == false {
     padding-bottom: $top;
-  } @else {
+  }
+
+  @else {
     padding-bottom: $bottom;
   }
 
@@ -11,7 +13,9 @@
 @mixin padding-horizontal($left, $right: false) {
   @if $right == false {
     padding-right: $left;
-  } @else {
+  }
+
+  @else {
     padding-right: $right;
   }
 
@@ -21,7 +25,9 @@
 @mixin margin-vertical($top, $bottom: false) {
   @if $bottom == false {
     margin-bottom: $top;
-  } @else {
+  }
+
+  @else {
     margin-bottom: $bottom;
   }
 
@@ -31,7 +37,9 @@
 @mixin margin-horizontal($left, $right: false) {
   @if $right == false {
     margin-right: $left;
-  } @else {
+  }
+
+  @else {
     margin-right: $right;
   }
 
