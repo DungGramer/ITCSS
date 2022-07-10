@@ -29,8 +29,4 @@
   }
 }
 
-
-/* Columns */
-.col {
-  @include make-col();
-}
+@include make-grid-columns();

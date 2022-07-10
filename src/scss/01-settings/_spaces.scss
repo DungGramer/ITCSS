@@ -15,3 +15,13 @@ $global-spacing-small: $global-baseline * $global-spacing-factor-small !default;
 $global-spacing-large: $global-baseline * $global-spacing-factor-large !default;
 $global-spacing-huge: $global-baseline * $global-spacing-factor-huge !default;
 
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: calc($spacer / 4),
+  2: calc($spacer / 2),
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+) !default;
