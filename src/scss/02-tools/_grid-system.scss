@@ -47,8 +47,9 @@
 }
 
 
-/** Row columns
-   Specify on a parent element(e.g., .row) to force immediate children into NN
+/**
+ * Row columns
+ * Specify on a parent element(e.g., .row) to force immediate children into NN
    number of columns. Supports wrapping to new lines, but does not do a Masonry
    style grid.
  */
@@ -64,7 +65,10 @@
 @mixin make-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
   @each $name, $breakpoint in $breakpoints {
     @include query-min($breakpoint) {
-
+      /**
+       * Provide basic `.col-{bp}` classes for equal-width flexbox columns
+       * Flexbugs #4: https://github.com/philipwalton/flexbugs#flexbug-4
+       */
       .col-#{name} {
         flex: 1 0 0%;
       }
@@ -92,7 +96,9 @@
           }
         }
 
+        // `$columns - 1` because offsetting by the width of an entire row isn't possible
         @for $i from 0 through ($columns - 1) {
+          // Avoid emitting useless .offset-0
           @if not ($name == '' and $i == 0) {
             .offset-#{infix}-#{i} {
               @include make-col-offset($i, $columns);
@@ -102,8 +108,21 @@
       }
 
       /** Gutters
-       *
+       * Make use of '.g-*', '.gx-*', '.gy-*' utilities to change spacing between the columns.
       */
+
+      @each $key, $value in $gutters {
+        .g-#{$name}-#{$key},
+        .gx-#{$name}-#{key} {
+          --#{$variable-prefix}gutter-x: #{$value};
+        }
+
+        .g-#{$name}-#{$key},
+        .gy-#{$name}-#{key} {
+          --#{$variable-prefix}gutter-y: #{$value};
+        }
+      }
     }
   }
 }
+
