@@ -12,7 +12,7 @@
 
 @mixin query-max($breakpoint) {
   @if $breakpoint and $breakpoint > 0 {
-    @media (max-width: $breakpoint - 1) {
+    @media (max-width: $breakpoint - 1px) {
       @content;
     }
   }
@@ -30,7 +30,7 @@
 }
 
 @mixin query-max-mobile() {
-  @media (max-width: $breakpoint-mobile - 1) {
+  @media (max-width: $breakpoint-mobile - 1px) {
     @content;
   }
 }
@@ -44,7 +44,7 @@
 }
 
 @mixin query-max-phablet() {
-  @media (max-width: $breakpoint-phablet - 1) {
+  @media (max-width: $breakpoint-phablet - 1px) {
     @content;
   }
 }
@@ -58,7 +58,7 @@
 }
 
 @mixin query-max-tablet() {
-  @media (max-width: $breakpoint-tablet - 1) {
+  @media (max-width: $breakpoint-tablet - 1px) {
     @content;
   }
 }
@@ -71,7 +71,7 @@
 }
 
 @mixin query-max-tablet-landscape() {
-  @media (max-width: $breakpoint-tablet-landscape - 1) {
+  @media (max-width: $breakpoint-tablet-landscape - 1px) {
     @content;
   }
 }
@@ -84,7 +84,7 @@
 }
 
 @mixin query-max-laptop() {
-  @media (max-width: $breakpoint-laptop - 1) {
+  @media (max-width: $breakpoint-laptop - 1px) {
     @content;
   }
 }
@@ -98,7 +98,7 @@
 }
 
 @mixin query-max-desktop() {
-  @media (max-width: $breakpoint-desktop - 1) {
+  @media (max-width: $breakpoint-desktop - 1px) {
     @content;
   }
 }
@@ -112,7 +112,7 @@
 }
 
 @mixin query-max-hd() {
-  @media (max-width: $breakpoint-hd - 1) {
+  @media (max-width: $breakpoint-hd - 1px) {
     @content;
   }
 }
@@ -126,7 +126,7 @@
 }
 
 @mixin query-max-2k() {
-  @media (max-width: $breakpoint-2k - 1) {
+  @media (max-width: $breakpoint-2k - 1px) {
     @content;
   }
 }
@@ -140,7 +140,7 @@
 }
 
 @mixin query-max-4k() {
-  @media (max-width: $breakpoint-4k - 1) {
+  @media (max-width: $breakpoint-4k - 1px) {
     @content;
   }
 }
